@@ -1,0 +1,13 @@
+# gitignore recomendado para backend MERN: 
+# MongoDB → base de datos NoSQL
+# Express → framework para Node.js
+# React → frontend (si lo usas)
+# Node.js → entorno de ejecución del servidor
+
+
+# Node modules (dependencias)
+node_modules/
+
+# Archivos de entorno
+.env
+.env.* 
