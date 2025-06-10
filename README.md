@@ -13,9 +13,15 @@ git clone  'xxxxxxxxxxxxxxxxx'
 
 
 3. Instalar dependencias.
-- Express.
+- Express. -> npm i express
 - ejs.
-- cors.
+- cors. -> npm i express ejs cors
+- nodemon -> npm install -g nodemon
+- dotenv -> npm i dotenv
+- mongoose -> npm install mongoose
+- body-parser -> ya en express
+- express-validator -> npm install express-validator
+
 
 ```shell
 npm install
