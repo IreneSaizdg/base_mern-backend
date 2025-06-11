@@ -21,6 +21,8 @@ git clone  'xxxxxxxxxxxxxxxxx'
 - mongoose -> npm install mongoose
 - body-parser -> ya en express
 - express-validator -> npm install express-validator
+- bcryptjs -> npm i bcryptjs
+- jsonwebtoken(JWT) -> npm i jsonwebtoken
 
 
 ```shell

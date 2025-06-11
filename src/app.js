@@ -17,7 +17,7 @@ const app = express(); //Hacer uso de express
 
 // Importa rutas publicas desde public.routes
 const publicRoutes = require('./routes/public.routes');
-
+const authenticationRoutes = require('./routes/authentication.routes.js') //Trae la ruta
 // Puerto desde variable de entorno o por defecto 3000
 const port = process.env.PORT || 3000; //Coge la variable de entorno o 3000
 
@@ -70,3 +70,4 @@ app.use("/api/v1/productos", publicRoutes); //Llamada a la ruta productos de pub
 
 // Ruta de autentificación
 app.use('/', require('./routes/authentication.routes.js'))
+app.use('/api/v1/auth', authenticationRoutes);
