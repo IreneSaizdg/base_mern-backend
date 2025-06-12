@@ -9,7 +9,7 @@ const User = new Schema({
         required: true,     // Este campo es obligatorio
     },
 
-    pasword: {
+    password: {
         type: String,     
         required: true    
     },
@@ -20,9 +20,10 @@ const User = new Schema({
     },
 
     role:{
-        type: String, // TODO: buscar como un usuario puede tener diferentes roles
+        type: String,
         required: true,
-        default: 'user'
+        default: 'user',
+        enum: ['admin', 'user'] // Un usuario puede tener varios roles
     }
     
 });

@@ -1,12 +1,14 @@
 const jwt = require('jsonwebtoken');
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 
 
 // FUNCIÓN PARA GENERAR TOKENS
 // jsonwebtoken no trabaja con funciones asincrónicas directamente, por eso se usa una Promesa.
-const JWTGenerator = async (_id, role) => {
+const JWTGenerator = async (uid, role) => {
     return new Promise((resolve, reject) => {
-        const payload = { _id, role };
+        const payload = { uid, role };
 
         jwt.sign(
             payload,

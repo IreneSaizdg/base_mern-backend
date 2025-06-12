@@ -17,3 +17,10 @@ router.get('/dashboard', isAdmin, (req, res) =>{
 
 //EXPORTACIONES
 module.exports = router
+
+
+//MODCLASE  -> VERIFICACIÓN ROLES
+Router.post('dashboard',[
+    verifyToken,
+    verifyRole ('admin', 'user'),
+], createProduct)

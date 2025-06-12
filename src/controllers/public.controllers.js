@@ -1,7 +1,3 @@
-
-
-
-
 // Rutas Productos
     const Product = require('../models/product.model')
 

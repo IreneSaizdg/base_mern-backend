@@ -14,12 +14,14 @@ git clone  'xxxxxxxxxxxxxxxxx'
 
 3. Instalar dependencias.
 - Express. -> npm i express
-- ejs.
+- ejs. -> frontend (mezcla html y js)
 - cors. -> npm i express ejs cors
 - nodemon -> npm install -g nodemon
+
 - dotenv -> npm i dotenv
 - mongoose -> npm install mongoose
 - body-parser -> ya en express
+
 - express-validator -> npm install express-validator
 - bcryptjs -> npm i bcryptjs
 - jsonwebtoken(JWT) -> npm i jsonwebtoken
